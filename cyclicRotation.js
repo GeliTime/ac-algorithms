@@ -4,7 +4,7 @@
 
 //A zero-indexed array A consisting of N integers is given. Rotation of the array means that each element is shifted right by one index, and the last element of the array is also moved to the first place.
 //
-//    For example, the rotation of array A = [3, 8, 9, 7, 6] is [6, 3, 8, 9, 7]. The goal is to rotate array A K times; that is, each element of A will be shifted to the right by K indexes.
+//    For example, the rotation of array A = [3, 8, 9, 7, 6] is [6, 3, 8, 9, 7]. The goal is to  rotate array A K times; that is, each element of A will be shifted to the right by K indexes.
 //
 //    Write a function:
 //
@@ -14,6 +14,17 @@
 //
 //    For example, given array A = [3, 8, 9, 7, 6] and K = 3, the function should return [9, 7, 6, 3, 8].\
 
+var myArray = [1,2,3,4,5]
+var catieArray = [9,8,7,6,5,4]
+var onyeArray = [ 123,435,7,135]
+
 function cyclicRotation(arr, rotation){
-    //Your code here...
+    let poppedItem = arr.pop()
+    arr.unshift(poppedItem)
+    return arr
 }
+
+// cyclicRotation(myArray,1)
+// cyclicRotation(catieArray,1)
+var answer = cyclicRotation(onyeArray,1)
+console.log(answer)

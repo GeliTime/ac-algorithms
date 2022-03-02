@@ -7,6 +7,34 @@ Hint: Chekout typeof() operator at
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof
 
 */
+function isBigger(a, b) {
+	if (a < b){
+		console.log(false)
+	} else if {
+		console.log(true)
+	} else {
+		console.log(0)
+	}
+	//if a > b, console.log(true)
+
+
+
+	//if a < b, console.log(false)
+	
+}
+
+function compare(num1, num2, num3) {
+	if (num3 > num2 && num1 > num3) {
+		return num1 + ' is the biggest number';
+	} else if (num2 > num1 && num2 > num3) {
+		return num2 + ' is the biggest number';
+	} else {
+		return num3 + ' is the biggest number';
+	}
+}
+var results = compare(10, 20, 30);
+console.log(results);
+
 
 /**
 Examples:
@@ -39,7 +67,3 @@ console.log(result) // -1
 
 
 
-function isBigger(a, b) {
-	//Your code here
-	
-}

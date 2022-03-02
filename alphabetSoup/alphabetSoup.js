@@ -1,3 +1,28 @@
+// function alphabetSoup(str) {
+// 	console.log(str)
+
+//   var splitString = str.split("")
+// 	console.log(splitString)
+
+//   var sortedArray = splitString.sort()
+// 	console.log(sortedArray)
+//   var joined = sortedArray.join("")
+//   console.log(joined)
+// }
+
+// alphabetSoup("hello")
+
+function alphabetSoup1(str) {
+	var answer = str.split('').sort().join('')
+  console.log(answer)
+}
+
+alphabetSoup1("geli")
+
+
+
+
+
 /* 
 Write a function alphabetSoup(str) that takes a string and returns a string with
 the letters in alphabetical order. Assume the input will not contain numbers or punctuation.
@@ -12,7 +37,8 @@ Hint: Check out trim() method at
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
 */
 
-/**
+
+ /**
 Examples:
 
 var result = alphabetSoup("hello");
@@ -32,8 +58,3 @@ var result = alphabetSoup("my string oh my");
 console.log(result) // "ghimmnorstyy"
 
 **/
-
-function alphabetSoup(str) {
-	//Your code here
-	
-}
